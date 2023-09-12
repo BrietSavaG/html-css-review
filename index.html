@@ -5,121 +5,126 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML & CSS Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
-  Scoopalicious
+  <header id="header">
+    <div class="wrapper"> 
+      <!-- div.wrapper connected the css wrapper element to our header -->
+      <span id="company-name">Scoopalicious</span>
 
-  Flavours
-  Locations
-  Shop online
-</nav>
+      <nav>
+        <ul>
+          <li><a href="#">Flavours</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Shop online</a></li>
+        </ul>  
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <div class="banner">
-    <img src="ice-cream-cones.jpg" alt=""><!-- In this hero section you will use the provided ice-cream-cones.jpg as a background image behind the word Scoopalicious. This would be the only section you will want to give a height. -->
-    <h1>Scoopalicious</h1>
-  </div>
-</header>
+  <Main>
+
+    <!-- In this hero section you will use the provided ice-cream-cones.jpg as a background image behind the word Scoopalicious. This would be the only section you will want to give a height. -->
 
 
-<div>
-  <h2>Welcome to Scoopalicious!</h2>
-
-  <h3>Serving the finest vegan ice cream in town, we specialize in crafting dairy-free delights that will send your taste buds into overdrive. From the moment you step inside our cozy urban shop, you'll know you're in for a treat!</h3>
-</div>
-
-<div>
-  <h2>Top 5 Fan Favourites</h2>
-
-  <div>
-
-    <h3>Choco-Obsession</h3>
-
-    <p>A rich, velvety dark chocolate ice cream made from a blend of organic cocoa and creamy coconut cream.</p>
-
-  </div>
-
-  <div>
+    <section id="hero-banner">
+      <div class="wrapper">
+        <h1>Scoopalicious</h1>
+      </div>
+    </section>
     
-    <h3>Very Berry Blast</h3>
+
+    <section id="intro">
+      <div class="wrapper">
+        <h2>Welcome to Scoopalicious!</h2>
+
+        <p>Serving the finest vegan ice cream in town, we specialize in crafting dairy-free delights that will send your taste buds into overdrive. From the moment you step inside our cozy urban shop, you'll know you're in for a treat!</p>
+      </div>
+    </section>
+
+
+    <section id="fan-fav">
+      <div class="wrapper">
+        <h2>Top 5 Fan Favourites</h2>
+
+        <ol>
+          <li>
+            <h3>Choco-Obsession</h3>
+            <p>A rich, velvety dark chocolate ice cream made from a blend of organic cocoa and creamy coconut cream.</p>
+          </li>
+
+          <li>
+            <h3>Very Berry Blast</h3>
+            <p>A harmonious explosion of raspberry, blackberry, and blueberry swirls in a smooth almond base.</p>
+          </li>
+
+          <li>
+            <h3>Cookie Crumble Craze</h3>
+            <p>Scrummy cookie crumbles meet the creaminess of cashew-based vanilla ice cream.</p>
+          </li>
+
+          <li>
+            <h3>Peanut Butter Paradise</h3>
+            <p>Luscious peanut butter ribbons swirled throughout a silky oat milk ice cream.</p>
+          </li>
+
+          <li>
+            <h3>Mango Tango Sorbet</h3>
+            <p>A zesty dance of mango and lime, perfect for a refreshing treat on a hot summer day.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <section id="team">
+      <div class="wrapper">
+        <h2>Meet Our Team</h2>
+        <p>We're passionate about ice cream, and our dedicated team of flavour wizards works diligently to create and perfect the most delectable vegan desserts.</p>
+
+        <div class="team-grid">
+
+          <article>
+            <img src="images/sophia-lee.jpg" alt="Profile picture of Sophia">
+            <h3>Sophia Lee</h3>
+            <p>Founder & Flavour Guru</p>
+          </article>
+
+          <article>
+            <img src="images/henry-chen.jpg" alt="Profile picture of Henry">
+            <h3>Henry Chen</h3>
+            <p>Master Scooper</p>
+          </article>
+
+          <article>
+            <img src="images/olivia-parks.jpg" alt="Profile picture of Olivia">
+            <h3>Olivia Parks</h3>
+            <p>Vegan Dessert Chef</p>
+          </article>
+
+          <article>
+            <img src="images/elijah-taylor.jpg" alt="Profile picture of Taylor">
+            <h3>Elijah Taylor</h3>
+            <p>Flavour Innovator</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </Main>
+
+  <footer>
+    <div class="wrapper">
+      <!-- small is used specifically for copyright at the bottom of the page and its the default typeface but made to around 13 pixels -->
+      <small>All rights reserved © 2023 Scoopalicious</small>
+    </div>
+  </footer>
     
-    <p>A harmonious explosion of raspberry, blackberry, and blueberry swirls in a smooth almond base.</p>
-
-  </div>
-
-  <div>
-    
-    <h3>Cookie Crumble Craze</h3>
-    
-    <p>Scrummy cookie crumbles meet the creaminess of cashew-based vanilla ice cream.</p>
-
-  </div>
-
-  <div>
-    
-    <h3>Peanut Butter Paradise</h3>
-    
-    <p>Luscious peanut butter ribbons swirled throughout a silky oat milk ice cream.</p>
-
-  </div>
-    
-  <div>
-    
-    <h3>Mango Tango Sorbet</h3>
-    
-    <p>A zesty dance of mango and lime, perfect for a refreshing treat on a hot summer day.</p>
-
-  </div>   
-</div>
-
-<div>
-  <h2>Meet Our Team</h2>
-
-  <p>We're passionate about ice cream, and our dedicated team of flavour wizards works diligently to create and perfect the most delectable vegan desserts.</p>
-</div>
-  
-<div>
-
-  <div>
-    <dl>
-      <img src="sophia-lee.jpg" alt=""><!-- Display the image: sophia-lee.jpg -->
-      <dt>Sophia Lee</dt>
-      <dd>Founder & Flavour Guru</dd>
-    </dl>
-  </div>
-
-  <div>
-    <dl>
-      <img src="henry-chen.jpg" alt=""><!-- Display the image: henry-chen.jpg -->
-      <dt>Henry Chen</dt>
-      <dd>Master Scooper</dd>
-    </dl>
-  </div>
-  
-  <div>
-    <dl>
-      <img src="olivia-parks.jpg" alt=""><!-- Display the image: olivia-parks.jpg -->
-      <dt>Olivia Parks</dt>
-      <dd>Vegan Dessert Chef</dd>
-    </dl>
-  </div>
-
-  <div>
-    <dl>
-      <img src="elijah-taylor.jpg" alt=""><!-- Display the image: elijah-taylor.jpg -->
-      <dt>Elijah Taylor</dt>
-      <dd>Flavour Innovator</dd>
-    </dl>
-  </div>
-
-</div>
-
-<div>
-  <footer>All rights reserved © 2023 Scoopalicious</footer>
-</div>  
-  
 </body>
 </html>

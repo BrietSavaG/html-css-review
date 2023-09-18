@@ -153,4 +153,5 @@ nav ul li a:focus {
 footer {
     background-color: black;
     text-align: center;
+    padding: 1em 0;
 }
